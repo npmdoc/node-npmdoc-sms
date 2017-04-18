@@ -1,0 +1,430 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="http://github.com/marcusbaer/node-sms"
+
+    >sms (v0.0.13)</a>
+</h1>
+<h4>Send and receive SMS from a connected device with 3G modem.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sms">module sms</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan"></span>sms</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">sms.</span>models</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sms.models">module sms.models</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sms.models.Message">
+            function <span class="apidocSignatureSpan">sms.models.</span>Message
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sms.models.Messages">
+            function <span class="apidocSignatureSpan">sms.models.</span>Messages
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sms.sms">module sms.sms</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sms.sms._command">
+            function <span class="apidocSignatureSpan">sms.sms.</span>_command
+            <span class="apidocSignatureSpan">(cmd, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sms.sms.deletesms">
+            function <span class="apidocSignatureSpan">sms.sms.</span>deletesms
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sms.sms.getsms">
+            function <span class="apidocSignatureSpan">sms.sms.</span>getsms
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sms.sms.identify">
+            function <span class="apidocSignatureSpan">sms.sms.</span>identify
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sms.sms.pin">
+            function <span class="apidocSignatureSpan">sms.sms.</span>pin
+            <span class="apidocSignatureSpan">(pincode, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sms.sms.reset">
+            function <span class="apidocSignatureSpan">sms.sms.</span>reset
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sms.sms.send">
+            function <span class="apidocSignatureSpan">sms.sms.</span>send
+            <span class="apidocSignatureSpan">(input, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sms" id="apidoc.module.sms">module sms</a></h1>
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sms.models" id="apidoc.module.sms.models">module sms.models</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sms.models.Message" id="apidoc.element.sms.models.Message">
+        function <span class="apidocSignatureSpan">sms.models.</span>Message
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Message = function (){ return parent.apply(this, arguments); }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sms.models.Messages" id="apidoc.element.sms.models.Messages">
+        function <span class="apidocSignatureSpan">sms.models.</span>Messages
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Messages = function (){ return parent.apply(this, arguments); }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var sms = require(&#x27;./lib/sms&#x27;);
+
+var verbodeMode = argv.v || false;
+var runDir = argv.d || process.cwd();
+var config = require(runDir + &#x27;/config&#x27;);
+var db = dirty(runDir + &#x27;/messages.db&#x27;);
+
+var storedMessages = new models.<span class="apidocCodeKeywordSpan">Messages</span>();
+
+db.on(&#x27;load&#x27;, function() {
+	storedMessages = new models.Messages(db.get(&#x27;messages&#x27;) || []);
+});
+
+var Library = {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sms.sms" id="apidoc.module.sms.sms">module sms.sms</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sms.sms._command" id="apidoc.element.sms.sms._command">
+        function <span class="apidocSignatureSpan">sms.sms.</span>_command
+        <span class="apidocSignatureSpan">(cmd, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_command = function (cmd, callback) {
+    gammu = childProcess.exec(cmd, function (error, stdout, stderr) {
+        if (error) {
+            console.log(error.stack);
+            console.log(&#x27;Error code: &#x27;+error.code);
+            console.log(&#x27;Signal received: &#x27;+error.signal);
+        }
+        //console.log(&#x27;Child Process STDOUT: &#x27;+stdout);
+        //console.log(&#x27;Child Process STDERR: &#x27;+stderr);
+        if (callback) {
+		  callback(stdout);
+	    }
+    });
+    gammu.on(&#x27;exit&#x27;, function (code) {
+        sys.log(&#x27;Child process exited with exit code &#x27; + code);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    });
+    gammu.on(&#x27;exit&#x27;, function (code) {
+        sys.log(&#x27;Child process exited with exit code &#x27; + code);
+    });
+},
+
+identify: function (callback) {
+    this.<span class="apidocCodeKeywordSpan">_command</span>(&#x27;gammu --identify&#x27;, function(response){
+        if (callback) callback(response);
+    });
+},
+
+pin: function (pincode, callback) {
+    this._command(&#x27;gammu --entersecuritycode PIN &#x27; + pincode, function(response){
+        if (callback) callback(response);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sms.sms.deletesms" id="apidoc.element.sms.sms.deletesms">
+        function <span class="apidocSignatureSpan">sms.sms.</span>deletesms
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">deletesms = function (callback) {
+    this._command(&#x27;gammu --deleteallsms&#x27;, function(response){
+            if (callback) callback(response);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+db.on(&#x27;load&#x27;, function() {
+	storedMessages = new models.Messages(db.get(&#x27;messages&#x27;) || []);
+});
+
+var Library = {
+
+	removeMessagesFromGateway: function (callback) {
+		//sms.<span class="apidocCodeKeywordSpan">deletesms</span>(callback);
+	},
+
+	removeMessagesFromDb: function (callback) {
+		//not implemented yet
+	},
+
+	readMessagesFromDb: function (callback) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sms.sms.getsms" id="apidoc.element.sms.sms.getsms">
+        function <span class="apidocSignatureSpan">sms.sms.</span>getsms
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getsms = function (callback) {
+    this._command(&#x27;gammu --getallsms&#x27;, function(response){
+	        if (callback) callback(response);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+            if (callback) {
+                callback(updatesFound);
+            }
+
+        };
+
+        sms.<span class="apidocCodeKeywordSpan">getsms</span>(getMessagesCallback);
+
+    },
+
+	registerCommand: function (command, callback) {
+		db.on(&#x27;load&#x27;, function() {
+			var listener = db.get(&#x22;listener&#x22;);
+			listener.push( command );
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sms.sms.identify" id="apidoc.element.sms.sms.identify">
+        function <span class="apidocSignatureSpan">sms.sms.</span>identify
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">identify = function (callback) {
+    this._command(&#x27;gammu --identify&#x27;, function(response){
+        if (callback) callback(response);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sms.sms.pin" id="apidoc.element.sms.sms.pin">
+        function <span class="apidocSignatureSpan">sms.sms.</span>pin
+        <span class="apidocSignatureSpan">(pincode, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pin = function (pincode, callback) {
+    this._command(&#x27;gammu --entersecuritycode PIN &#x27; + pincode, function(response){
+        if (callback) callback(response);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sms.sms.reset" id="apidoc.element.sms.sms.reset">
+        function <span class="apidocSignatureSpan">sms.sms.</span>reset
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reset = function (callback) {
+    //this._command(&#x27;gammu reset HARD&#x27;, function(response){
+    //    if (callback) callback(response);
+    //});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sms.sms.send" id="apidoc.element.sms.sms.send">
+        function <span class="apidocSignatureSpan">sms.sms.</span>send
+        <span class="apidocSignatureSpan">(input, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (input, callback) {
+//        this._command(&#x27;echo &#x22;&#x27; + input.text + &#x27;&#x22; | gammu --sendsms TEXT &#x27; + input.to, function(response){
+    this._command(&#x27;gammu sendsms TEXT &#x27; + input.to + &#x27; -text &#x22;&#x27; + input.text + &#x27;&#x22;&#x27;, function(response){
+        if (callback) callback(response);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+				}
+			});
+		});
+	},
+
+	sendMessage: function (messageObj) {
+        // messageObj has attributes: to (phone number), message (text), success (callback)
+		sms.<span class="apidocCodeKeywordSpan">send</span>({
+			to: messageObj.to,       	// Recipient Phone Number, lead by +49...
+			text: messageObj.message    // Text to send
+		}, function(err, result) {
+			// error message in String and result information in JSON
+			if (err) {
+				console.log(err);
+			}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
