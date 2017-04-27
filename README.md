@@ -1,4 +1,7 @@
-# api documentation for  [sms (v0.0.13)](http://github.com/marcusbaer/node-sms)  [![npm package](https://img.shields.io/npm/v/npmdoc-sms.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sms) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sms.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sms)
+# npmdoc-sms
+
+#### basic api documentation for  [sms (v0.0.13)](http://github.com/marcusbaer/node-sms)  [![npm package](https://img.shields.io/npm/v/npmdoc-sms.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sms) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sms.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sms)
+
 #### Send and receive SMS from a connected device with 3G modem.
 
 [![NPM](https://nodei.co/npm/sms.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/sms)
