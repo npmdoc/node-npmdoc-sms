@@ -250,21 +250,21 @@ var Library = {
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    });
-    gammu.on(&#x27;exit&#x27;, function (code) {
-        sys.log(&#x27;Child process exited with exit code &#x27; + code);
-    });
-},
-
-identify: function (callback) {
-    this.<span class="apidocCodeKeywordSpan">_command</span>(&#x27;gammu --identify&#x27;, function(response){
-        if (callback) callback(response);
-    });
-},
-
-pin: function (pincode, callback) {
-    this._command(&#x27;gammu --entersecuritycode PIN &#x27; + pincode, function(response){
-        if (callback) callback(response);
+                //sms.deletesms(); // remove all messages
+				listener = db.get(&#x27;listener&#x27;) || []; // read from data source, as listener could have been added while running
+				if (listener &#x26;&#x26; listener.length&#x3e;0) {
+					for (var i=0; i&#x3c;listener.length; i++) {
+						if (verbodeMode) {
+							sys.log(&#x22;call listener: &#x22; + listener[i]);
+						}
+						sms.<span class="apidocCodeKeywordSpan">_command</span>(listener[i]);
+					}
+				}
+			});
+		}
+	});
+	setTimeout(getMessagesFromGateway, config.timeout);
+}
 ...</pre></li>
     </ul>
 
